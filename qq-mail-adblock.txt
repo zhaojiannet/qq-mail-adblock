@@ -1,0 +1,62 @@
+[Adblock Plus]
+! Title: QQ邮箱VIP广告屏蔽规则
+! Description: 屏蔽新版QQ邮箱中的VIP会员推广广告
+! Homepage: https://github.com/zhaojiannet/qq-mail-adblock
+! Last modified: 2025-12-25
+! Version: 1.0.0
+! License: MIT
+
+! =====================================
+! 头像左侧
+! =====================================
+mail.qq.com##div.xmail-cmp-vip-float-bubble:has(.cmp-vip-float-bubble-body)
+mail.qq.com##div:has(span:has-text(开通 VIP 会员)):has(.cmp-vip-icon)
+mail.qq.com##div.cmp-vip-float-bubble-body:has-text(让邮箱更好用)
+
+! =====================================
+! 头像弹出
+! =====================================
+wx.mail.qq.com##.xmail-cmp-vip-embed-bubble
+wx.mail.qq.com##div.xmail-ui-btn.ui-btn-size32.ui-btn-them-clear-gray.footer-btn:nth-of-type(1)
+wx.mail.qq.com##.vip-icon-click.vip-icon-in-panel.cmp-vip-state-icon.common-state-icon
+wx.mail.qq.com##.profile-user-info > .cmp-vip-state-icon.common-state-icon
+wx.mail.qq.com##.cmp-vip-icon-click.cmp-vip-icon-in-panel.cmp-vip-state-icon.cmp-common-state-icon
+
+! =====================================
+! 应用容量
+! =====================================
+wx.mail.qq.com##div.setting-group:nth-of-type(1)
+wx.mail.qq.com##.content-time
+
+! =====================================
+! 设置-顶部
+! =====================================
+wx.mail.qq.com##.xmail-cmp-vip-banner-common
+
+! =====================================
+! 设置-容量
+! =====================================
+wx.mail.qq.com##.mail-setting-storage > div.setting-item-wrap:nth-of-type(2) > div.setting-item-row:nth-of-type(2)
+
+! =====================================
+! 设置-显示主题
+! =====================================
+wx.mail.qq.com##.setting-item-wrap.mail-setting-themes > div.setting-item-row:nth-of-type(1)
+wx.mail.qq.com##.setting-item-wrap.mail-setting-themes > div.setting-item-row:nth-of-type(2) > .setting-theme-cards
+wx.mail.qq.com##.setting-item-wrap.mail-setting-themes > div.setting-item-row:nth-of-type(3)
+
+! =====================================
+! 设置-发信
+! =====================================
+wx.mail.qq.com##.inactive-account-table
+
+! =====================================
+! 设置-自助查询
+! =====================================
+wx.mail.qq.com##.xmail-ui-hyperlink.query-head-note
+wx.mail.qq.com##.xmail-ui-hyperlink.ui-hyperlink-is-inline.tab-title-vip-link
+
+! =====================================
+! 设置-全局
+! =====================================
+wx.mail.qq.com##.cmp-streamer-right
