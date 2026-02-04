@@ -14,6 +14,11 @@ mail.qq.com##div:has(span:has-text(开通 VIP 会员)):has(.cmp-vip-icon)
 mail.qq.com##div.cmp-vip-float-bubble-body:has-text(让邮箱更好用)
 
 ! =====================================
+! 头像又侧下拉菜单
+! =====================================
+wx.mail.qq.com##.cmp-vip-state-icon.cmp-common-state-icon
+
+! =====================================
 ! 头像弹出
 ! =====================================
 wx.mail.qq.com##.xmail-cmp-vip-embed-bubble
@@ -61,3 +66,11 @@ wx.mail.qq.com##.cmp-user-card-info > .xmail-ui-hyperlink
 ! 设置-全局
 ! =====================================
 wx.mail.qq.com##.cmp-streamer-right
+
+! =====================================
+! 账号设置
+! =====================================
+wx.mail.qq.com##div.account_item:nth-of-type(6) > .account_item_left > .account_item_text > .cmp-vip-icon.cmp-vip-icon-click.cmp-vip-icon-size16
+wx.mail.qq.com##.vip_open_tips
+wx.mail.qq.com##.home_content_frame.domain-email-ad > .common_title > .cmp-vip-icon.cmp-vip-icon-click.cmp-vip-icon-size16
+wx.mail.qq.com##.vip-ad-bar
