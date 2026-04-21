@@ -10,13 +10,13 @@
 ! 头像左侧
 ! =====================================
 mail.qq.com##div.xmail-cmp-vip-float-bubble:has(.cmp-vip-float-bubble-body)
-mail.qq.com##div:has(span:has-text(开通 VIP 会员)):has(.cmp-vip-icon)
 mail.qq.com##div.cmp-vip-float-bubble-body:has-text(让邮箱更好用)
 
 ! =====================================
 ! 头像又侧下拉菜单
 ! =====================================
 wx.mail.qq.com##.cmp-vip-state-icon.cmp-common-state-icon
+wx.mail.qq.com##.xmail-ui-btn:has(.cmp-vip-icon)
 
 ! =====================================
 ! 头像弹出
