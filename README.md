@@ -1,6 +1,6 @@
 # qq-mail-adblock
 
-新版QQ邮箱VIP会员广告屏蔽规则，提供两种安装方式：**广告过滤插件订阅** 与 **油猴脚本**。两份资源选择器同源，按需任选其一即可。
+新版 QQ 邮箱 VIP 广告屏蔽规则，两种安装方式选一个即可：**广告过滤插件订阅** 或 **油猴脚本**，两份用的是同一套选择器。
 
 ## 安装方式一：广告过滤插件订阅
 
@@ -28,13 +28,17 @@ https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblo
 1. 进入 `brave://adblock`
 2. 在「Custom filters」中添加订阅地址
 
-> 提示：不同过滤器对扩展语法（如 `:has-text`）支持程度不一，若发现某条规则未生效，建议改用下方油猴脚本。
+> 提示：不同过滤器对扩展语法（如 `:has-text`）支持程度不一，如果某条规则未生效，可以改用下方油猴脚本。
 
 ## 安装方式二：油猴脚本
 
 适用于 Tampermonkey、Violentmonkey、Userscripts (Safari) 等用户脚本管理器。
 
-安装地址（点击后管理器会自动识别）：
+**推荐：通过 Greasy Fork 安装**（一键安装，附带版本历史和反馈区）
+
+> https://greasyfork.org/zh-CN/scripts/575693
+
+也可以直接用 GitHub 原始地址（管理器会自动识别）：
 
 ```
 https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblock.user.js
@@ -44,7 +48,7 @@ https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblo
 
 ### 调试模式
 
-在 QQ 邮箱页面的浏览器控制台执行后刷新即可看到命中日志：
+在 QQ 邮箱页面的浏览器控制台执行下面这行，刷新后能看到命中日志：
 
 ```js
 localStorage.setItem('qq-mail-adblock-debug', '1')
