@@ -1,14 +1,14 @@
 # qq-mail-adblock
 
-新版QQ邮箱VIP会员广告屏蔽过滤规则
+新版QQ邮箱VIP会员广告屏蔽规则，提供两种安装方式：**广告过滤插件订阅** 与 **油猴脚本**。两份资源选择器同源，按需任选其一即可。
 
-## 订阅地址
+## 安装方式一：广告过滤插件订阅
+
+订阅地址：
 
 ```
 https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblock.txt
 ```
-
-## 使用方法
 
 ### Adblock Plus / uBlock Origin
 
@@ -28,6 +28,30 @@ https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblo
 1. 进入 `brave://adblock`
 2. 在「Custom filters」中添加订阅地址
 
+> 提示：不同过滤器对扩展语法（如 `:has-text`）支持程度不一，若发现某条规则未生效，建议改用下方油猴脚本。
+
+## 安装方式二：油猴脚本
+
+适用于 Tampermonkey、Violentmonkey、Userscripts (Safari) 等用户脚本管理器。
+
+安装地址（点击后管理器会自动识别）：
+
+```
+https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblock.user.js
+```
+
+脚本内置了 `@updateURL`，安装后会随仓库更新自动升级。
+
+### 调试模式
+
+在 QQ 邮箱页面的浏览器控制台执行后刷新即可看到命中日志：
+
+```js
+localStorage.setItem('qq-mail-adblock-debug', '1')
+```
+
+关闭：`localStorage.removeItem('qq-mail-adblock-debug')`
+
 ## 屏蔽范围
 
 | 位置 | 说明 |
@@ -43,10 +67,17 @@ https://raw.githubusercontent.com/zhaojiannet/qq-mail-adblock/main/qq-mail-adblo
 
 ## 兼容性
 
-已测试：
+过滤规则订阅（`qq-mail-adblock.txt`）已测试：
 - Adblock Plus
 - Brave 浏览器内置广告拦截
 - uBlock Origin
+
+油猴脚本（`qq-mail-adblock.user.js`）目标兼容：
+- Tampermonkey（Chrome / Edge / Firefox）
+- Violentmonkey
+- Userscripts（Safari / iOS）
+
+> 油猴脚本依赖原生 CSS `:has()` 选择器，需 Chrome 105+ / Safari 15.4+ / Firefox 121+。
 
 ## 相关文章
 

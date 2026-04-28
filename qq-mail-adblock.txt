@@ -2,7 +2,7 @@
 ! Title: QQ邮箱VIP广告屏蔽规则
 ! Description: 屏蔽新版QQ邮箱中的VIP会员推广广告
 ! Homepage: https://github.com/zhaojiannet/qq-mail-adblock
-! Last modified: 2026-02-02
+! Last modified: 2026-04-28
 ! Version: 1.0.0
 ! License: MIT
 
